@@ -1,17 +1,49 @@
 <!-- http://18.223.187.46/creative-project-2 -->
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Chuck Norris Facts</title>
-    <script
-        src="http://code.jquery.com/jquery-3.2.1.min.js">
-    </script>
 </head>
 <body>
-    <div id="randomFactButton">Click for random fact</div>
+    <div class="jumbotron" id='main'>
+      <h1 class="display-4">Chuck Norris Facts <img src='https://assets.chucknorris.host/img/avatar/chuck-norris.png'></img></h1>
+      <p class="lead">Push the "R" key for facts about the man who babysat Christopher Columbus.</p>
+      <p><button class="btn btn-info" type="button" data-toggle="collapse" data-target="#extraOptions" aria-expanded="false" aria-controls="collapseExample">Extra Options</button></p>
+        <div class="collapse" id="extraOptions">
+          <div class="card card-body">
+            <p>Category:</p><p class='small' id='category'>All</p>
+            <small class='text-muted'>Pressing R will bring a new random fact of the selected category even with the search set.</small>
+            <select id='categorySelect'>
+                <option value='all'>All</option>
+                <option value='movie'>Movie</option>
+                <option value='food'>Food</option>
+                <option value='celebrity'>Celebrity</option>
+                <option value='science'>Science</option>
+                <option value='sport'>Sport</option>
+                <option value='political'>Political</option>
+                <option value='religion'>Religion</option>
+                <option value='animal'>Animal</option>
+                <option value='history'>History</option>
+                <option value='music'>Music</option>
+                <option value='travel'>Travel</option>
+                <option value='money'>Money</option>
+                <option value='fashion'>Fashion</option>
+            </select>
+            <br>
+            </div>
+        </div>
+        <br>
+      <p><small class="text-muted">We apologize for any innapropriate language.</small></p>
+      <hr class="my-4">
+      <div class="loader"></div>
+      <p id='randomFact'></p>
+    </div>
     
-    <div id="randomFact"></div>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
