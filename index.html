@@ -1,4 +1,4 @@
-<!-- http://18.223.187.46/creative-project-2 -->
+  <!-- http://18.223.187.46/creative-project-2 -->
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -7,12 +7,12 @@
 </head>
 <body>
     <div class="jumbotron" id='main'>
-      <h1 class="display-4">Chuck Norris Facts <img src='https://assets.chucknorris.host/img/avatar/chuck-norris.png'></img></h1>
-      <p class="lead">Push the "R" key for facts about the man who babysat Christopher Columbus.</p>
+      <h1 class="display-4">Chuck Norris Facts <img id="chuckIcon" src='https://assets.chucknorris.host/img/avatar/chuck-norris.png'></img></h1>
+      <p class="lead">Click on Chuck or push the "R" key for facts about the man who babysat Christopher Columbus.</p>
       <p><button class="btn btn-info" type="button" data-toggle="collapse" data-target="#extraOptions" aria-expanded="false" aria-controls="collapseExample">Extra Options</button></p>
         <div class="collapse" id="extraOptions">
           <div class="card card-body">
-            <p>Category:</p><p class='small' id='category'>All</p>
+            <p>Category: <span id='category'>all</span></p>
             <small class='text-muted'>Pressing R will bring a new random fact of the selected category even with the search set.</small>
             <select id='categorySelect'>
                 <option value='all'>All</option>
